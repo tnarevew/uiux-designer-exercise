@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odoo UI/UX Designer Exercise</title>
+    </head>
+    <body class="">
+        <div
+            id="app"
+            class="d-grid justify-content-center align-items-center min-vh-100 d-flex"
+        >
+            <div class="card mw-600 col-12">
+                <div class="card-header pb-0 border-0 bg-dark">
+                    <ul id="nav-tab" class="nav nav-tabs gap-2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link nav-link--bg active"
+                                id="nav-tab-1"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-pane-1"
+                                type="button"
+                                role="tab"
+                                aria-controls="tab-pane-1"
+                                aria-selected="true"
+                            >
+                                Tab 1
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link nav-link--bg border-light"
+                                id="nav-tab-2"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-pane-2"
+                                type="button"
+                                role="tab"
+                                aria-controls="tab-pane-2"
+                                aria-selected="false"
+                            >
+                                Tab 2
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link nav-link--bg"
+                                id="nav-tab-3"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-pane-3"
+                                type="button"
+                                role="tab"
+                                aria-controls="tab-pane-3"
+                                aria-selected="false"
+                            >
+                                Tab 3
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link nav-link--bg"
+                                id="disabled-tab"
+                                data-bs-toggle="tab"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                disabled
+                            >
+                                Disabled
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div
+                            class="tab-pane fade show active"
+                            id="tab-pane-1"
+                            role="tabpanel"
+                            aria-labelledby="tab-pane-1"
+                            tabindex="0"
+                        >
+                            <div class="p-4">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle text-muted">
+                                    Card subtitle
+                                </h6>
+                            </div>
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <ul
+                                        class="nav flex-column"
+                                        role="tablist"
+                                        aria-orientation="vertical"
+                                    >
+                                        <li>
+                                            <a
+                                                class="nav-link active py-4 border-top w-100"
+                                                id="v-tab-1"
+                                                data-bs-toggle="tab"
+                                                href="#v-pane-1"
+                                                role="tab"
+                                                aria-controls="v-tab-1"
+                                                aria-selected="true"
+                                            >
+                                                An item
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="nav-link py-4 border-top"
+                                                id="v-tab-2"
+                                                data-bs-toggle="tab"
+                                                href="#v-pane-2"
+                                                role="tab"
+                                                aria-controls="v-tab-2"
+                                                aria-selected="true"
+                                            >
+                                                A second item
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="nav-link py-4 border-top w-100"
+                                                id="v-tab-3"
+                                                data-bs-toggle="tab"
+                                                href="#v-pane-3"
+                                                role="tab"
+                                                aria-controls="v-tab-3"
+                                                aria-selected="true"
+                                            >
+                                                A third item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col col-12 col-md-6 border-top">
+                                    <div class="tab-content h-100">
+                                        <div
+                                            class="tab-pane fade show h-100 ratio ratio-16x9 active"
+                                            id="v-pane-1"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pane-1"
+                                        >
+                                            <img
+                                                src="https://placehold.co/300x300/blue/white"
+                                                class="w-100 h-100 object-fit-cover"
+                                                alt="Placeholder image"
+                                            />
+                                        </div>
+                                        <div
+                                            class="tab-pane fade show h-100 ratio ratio-16x9"
+                                            id="v-pane-2"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pane-2"
+                                        >
+                                            <img
+                                                src="https://placehold.co/300x300/yellow/black"
+                                                class="w-100 h-100 object-fit-cover"
+                                                alt="Placeholder image"
+                                            />
+                                        </div>
+                                        <div
+                                            class="tab-pane fade show h-100 ratio ratio-16x9"
+                                            id="v-pane-3"
+                                            role="tabpanel"
+                                            aria-labelledby="v-pane-3"
+                                        >
+                                            <img
+                                                src="https://placehold.co/300x300/black/white"
+                                                class="w-100 h-100 object-fit-cover"
+                                                alt="Placeholder image"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade show"
+                            id="tab-pane-2"
+                            role="tabpanel"
+                            aria-labelledby="tab-pane-2"
+                            tabindex="0"
+                        >
+                            <div
+                                class="d-flex flex-column justify-content-center align-items-center py-5 px-4"
+                            >
+                                <span class="mb-4">Loading…</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="4em"
+                                    height="4em"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"
+                                    >
+                                        <animateTransform
+                                            attributeName="transform"
+                                            dur="0.75s"
+                                            repeatCount="indefinite"
+                                            type="rotate"
+                                            values="0 12 12;360 12 12"
+                                        />
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane fade show"
+                            id="tab-pane-3"
+                            role="tabpanel"
+                            aria-labelledby="tab-pane-3"
+                            tabindex="0"
+                        >
+                            <div class="row">
+                                <div class="col-4">
+                                    <img
+                                        src="https://placehold.co/300x300/red/white"
+                                        class="w-100 h-100 object-fit-cover"
+                                        alt="Placeholder image"
+                                    />
+                                </div>
+                                <div
+                                    class="py-4 px-4 col-8 d-flex flex-column justify-content-center"
+                                >
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        This is a wideer card wih supporting
+                                        texte below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary"
+                                            >Last updated 3 mins ago</small
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer px-4 text-bg-dark">2 days ago</div>
+            </div>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
