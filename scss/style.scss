@@ -88,3 +88,6 @@ $utilities: map-merge(
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
+// custom mixins
+@import "./mixins/utilities";
+

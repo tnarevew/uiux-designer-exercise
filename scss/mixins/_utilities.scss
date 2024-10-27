@@ -1,0 +1,25 @@
+@each $color, $value in $theme-colors {
+    .#{$color} {
+        --#{$prefix}body-bg: #{shift-color($value, $link-shade-percentage)};
+        --#{$prefix}secondary-color: #{mix($gray-600, color-contrast($value))};
+
+        --#{$prefix}card-cap-bg: #{$value};
+        --#{$prefix}card-border-color: #{shift-color(mix($gray-400, color-contrast($value)), $link-shade-percentage)};
+        --#{$prefix}card-color: #{color-contrast($value) if($enable-important-utilities, !important, null)};
+        --#{$prefix}card-cap-color: var(--#{$prefix}card-color);
+        --#{$prefix}card-title-color: var(--#{$prefix}card-color);;
+
+        .nav-tabs {
+            --#{$prefix}nav-tabs-link-hover-border-color: var(--#{$prefix}card-border-color);
+            --#{$prefix}nav-tabs-link-active-border-color: var(--#{$prefix}card-border-color);
+            --#{$prefix}nav-tabs-link-active-color: var(--#{$prefix}card-color);
+        }
+
+        .nav-link {
+            --#{$prefix}nav-link-color: var(--#{$prefix}card-color);;
+            --#{$prefix}nav-link-hover-color: #{shift-color(color-contrast($value), $link-shade-percentage)};
+            --#{$prefix}nav-link-disabled-color: var(--#{$prefix}card-border-color);
+        }
+    }
+  }
+  
