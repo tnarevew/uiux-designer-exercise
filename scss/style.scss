@@ -1,32 +1,44 @@
 @import "bootstrap/scss/functions";
 
-$primary: #293590;
+$enable-shadows: true;
+
+$primary: #714b67;
+$secondary: #017e84;
 
 $font-size-root: 10px;
 $font-size-base: 1.6rem;
 $headings-font-weight:  700;
 
-$grid-gutter-width: 0;
-$border-radius: 0;
+$grid-gutter-width: 2rem;
+$border-radius: 0.5rem;
 
 $nav-link-padding-x: 2rem;
 $nav-link-padding-y: 1rem;
 
 // cards
 //------
-$card-spacer-x: 0;
-$card-spacer-y: 0;
+$card-spacer-x: 2rem;
+$card-spacer-y: 2rem;
 
-$card-cap-padding-y: 1rem;
-$card-cap-padding-x: 1rem;
+$card-border-radius:  1rem;
+
+$card-cap-padding-y: 0;
+$card-cap-padding-x: 2rem;
 
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 
-$nav-tabs-border-width: 0;
-$nav-tabs-link-active-bg: $body-bg;
-$nav-tabs-link-active-color:  $dark;
-$nav-link-disabled-color:  $dark;
+$light: $gray-200;
+
+$card-box-shadow: $box-shadow-lg;
+
+$nav-link-color: $secondary;
+
+$nav-pills-link-active-bg: $light;
+$nav-pills-link-active-color: $dark;
+
+$nav-underline-link-active-color: $primary;
+$nav-underline-border-width: 0.2rem;
 
 $spacers: (
   0: 0,
@@ -66,20 +78,3 @@ $utilities: map-merge(
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
-
-/* 
-As it seems, there's no "clean way" to add background
-colors to the .nav-link elements without altering active
-styles. In BS v5.x, a background-color value of none has
-been added, so I couldn't find a way to modify it
-without adding custom CSS :(
-*/
-.nav-link--bg {
-  background-color: $gray-300;
-
-  &.disabled,
-  &:disabled {
-    background-color: $gray-600;
-    color: $light;
-  }
-}
