@@ -63,6 +63,16 @@ $utilities: map-merge(
     )
   )
 );
+$utilities: map-merge(
+  $utilities,
+  (
+    "max-height": (
+      property: max-height,
+      class: mh,
+      values: (1: 200px, 2: 100%),
+    )
+  )
+);
 
 // Layout & components
 @import "bootstrap/scss/containers";
